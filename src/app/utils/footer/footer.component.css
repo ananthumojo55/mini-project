@@ -1,0 +1,9 @@
+@font-face{
+    font-family: myFont;
+    src: url("/assets/fonts/SAMAN.TTF");
+    
+  }
+  #ii{
+    font-family: myFont;
+    font-size: 20px;
+  }
