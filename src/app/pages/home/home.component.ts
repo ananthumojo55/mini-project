@@ -10,4 +10,8 @@ import { TrainService } from 'src/app/train.service';
 export class HomeComponent {
   constructor(private train : TrainService, private router: Router){}
   database=this.train.getData();
+  gotoHere(id:string){
+    localStorage.setItem('id',id)
+    this.router.navigate(['/single'])
+  }
 }

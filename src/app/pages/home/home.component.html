@@ -3,7 +3,7 @@
   <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
     <h1 id="h1">INDIAN RAILWAYS</h1>
     <h2 id="h2">atithi devo bhava</h2>
-    <button type="button" class="btn btn-outline-warning" id="pj">Plan a Journey</button>
+    <button type="button" routerLink="journey" class="btn btn-outline-warning" id="pj">Plan a Journey</button>
   </div>
 </section><!-- End Hero Section -->
 
@@ -32,7 +32,7 @@
 
 In 2020, Indian Railways carried 808.6 crore (8.086 billion) passengers and in 2022, Railways transported 1418.1 million tonnes of freight. It runs 13,169 passenger trains daily, on both long-distance and suburban routes, covering 7,325 stations across India. Mail or Express trains, the most common types of trains, run at an average speed of 50.6 km/h (31.4 mph). Suburban EMUs run at an average speed of 37.5 km/h (23.3 mph). Ordinary passenger trains (incl. mixed) run at an average speed of 33.5 km/h (20.8 mph). The maximum speed of passenger trains varies, with the Vande Bharat Express running at a peak speed of 180 km/h (110 mph).
         </p>
-        <button type="button" class="btn btn-outline-info">Tap here to visit our GALLERY</button>
+        <!-- <button type="button" class="btn btn-outline-info">Tap here to visit our GALLERY</button> -->
       </div>
     </div>
   </div>
@@ -78,15 +78,48 @@ In 2020, Indian Railways carried 808.6 crore (8.086 billion) passengers and in 2
       <h3 class="section-title">Services</h3>
       
     </div>
+    <!-- Using single page component -->
     <div class="row">
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" *ngFor="let item of database">
         <div class="box">
           <div class="icon"><i class="bi {{item.icon}}"></i></div>
           <h4 class="title" style="color: beige;">{{item.title}}</h4>
           <p class="description">{{item.description}}</p>
-          <button type="button" class="btn btn-outline-warning">{{item.button}}</button>
+          <button type="button" (click)="gotoHere(item.title)" class="btn btn-outline-warning">{{item.button}}</button>
         </div>
       </div>
       </div>
   </div>
+  <!-- using Routerlink -->
+  <div class="container">
+    <div class="row">
+    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+      <div class="box">
+        <div class="icon"><i class="bi bi-ticket"></i></div>
+        <h4 class="title" style="color: beige;">Book Ticket</h4>
+        <p class="description">Get Your Tickets on your hand!</p>
+        <button type="button" routerLink="bookticket" class="btn btn-outline-warning">Reserve</button>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+      <div class="box">
+        <div class="icon"><i class="bi bi-train-freight-front"></i></div>
+        <h4 class="title" style="color: beige;">Premium Trains</h4>
+        <p class="description">Fastest and Luxurious</p>
+        <button type="button" routerLink="premiumtrains" class="btn btn-outline-warning">Explore</button>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+      <div class="box">
+        <div class="icon"><i class="bi bi-train-freight-front-fill"></i></div>
+        <h4 class="title" style="color: beige;">Special Tourist Trains</h4>
+        <p class="description">Special Holiday Packages</p>
+        <button type="button"  routerLink="touristtrains" class="btn btn-outline-warning">Explore</button>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  
+
 </section><!-- End Services Section -->

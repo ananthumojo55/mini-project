@@ -1,7 +1,42 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BookticketComponent } from './pages/bookticket/bookticket.component';
+import { ContactusComponent } from './pages/contactus/contactus.component';
+import { HomeComponent } from './pages/home/home.component';
+import { JourneyComponent } from './pages/journey/journey.component';
+import { PremiumtrainsComponent } from './pages/premiumtrains/premiumtrains.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { SingleComponent } from './pages/single/single.component';
+import { TouristtrainsComponent } from './pages/touristtrains/touristtrains.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:'',component:HomeComponent
+  },
+  {
+    path:'single',component:SingleComponent
+  },
+  {
+    path:'journey',component:JourneyComponent
+  },
+  {
+    path:'bookticket',component:BookticketComponent
+  },
+  {
+    path:'signup',component:SignupComponent
+  },
+  
+  {
+    path:'premiumtrains',component:PremiumtrainsComponent
+  },
+  {
+    path:'contactus',component:ContactusComponent
+  },
+  {
+    path:'touristtrains',component:TouristtrainsComponent
+  },
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
