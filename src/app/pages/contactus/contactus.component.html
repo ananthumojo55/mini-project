@@ -1,34 +1,67 @@
-<div style="background-color: rgb(15, 15, 15);">
-<!-- Wrapper container -->
-<div class="container py-4" >
-
-    <!-- Bootstrap 5 starter form -->
-    <form id="contactForm">
-  
-      <!-- Name input -->
-      <div class="mb-3">
-        <label class="form-label" for="name">Name</label>
-        <input class="form-control" id="name" type="text" placeholder="Name" />
-      </div>
-  
-      <!-- Email address input -->
-      <div class="mb-3">
-        <label class="form-label" for="emailAddress">Email Address</label>
-        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
-      </div>
-  
-      <!-- Message input -->
-      <div class="mb-3">
-        <label class="form-label" for="message">Message</label>
-        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
-      </div>
-  
-      <!-- Form submit button -->
-      <div class="d-grid">
-        <button class="btn btn-outline-warning btn-lg" type="submit">Submit</button>
-      </div>
-  
-    </form>
-  
-  </div>
-</div>
+<section class="contact-page-section">
+	<div class="container">
+		<div class="sec-title">
+			<div class="title">Contact Us</div>
+			  <h2 style="color: beige;">Let's Get in Touch.</h2>
+		  </div>
+		  <div class="inner-container">
+			<div class="row clearfix">
+			  
+				<!--Form Column-->
+				  <div class="form-column col-md-8 col-sm-12 col-xs-12">
+					<div class="inner-column">
+						
+						  <!--Contact Form-->
+						  <div class="contact-form">
+							  <form method="post" action="sendemail.php" id="contact-form">
+								  <div class="row clearfix">
+									  <div class="form-group col-md-6 col-sm-6 co-xs-12">
+										  <input type="text" name="name" value="" placeholder="Name" required>
+									  </div>
+									  <div class="form-group col-md-6 col-sm-6 co-xs-12">
+										  <input type="email" name="email" value="" placeholder="Email" required>
+									  </div>
+									  <div class="form-group col-md-6 col-sm-6 co-xs-12">
+										  <input type="text" name="subject" value="" placeholder="Subject" required>
+									  </div>
+									  <div class="form-group col-md-6 col-sm-6 co-xs-12">
+										  <input type="text" name="phone" value="" placeholder="Phone" required>
+									  </div>
+									  <div class="form-group col-md-12 col-sm-12 co-xs-12">
+										  <textarea name="message" placeholder="Massage"></textarea>
+									  </div>
+									  <div class="form-group col-md-12 col-sm-12 co-xs-12">
+										  <button type="submit" class="theme-btn btn-style-one">Send Now</button>
+									  </div>
+								  </div>
+							  </form>
+						  </div>
+						  <!--End Contact Form-->
+						  
+					  </div>
+				  </div>
+				  
+				  <!--Info Column-->
+				  <div class="info-column col-md-4 col-sm-12 col-xs-12">
+					<div class="inner-column">
+						<h2>Contact Info</h2>
+						  <ul class="list-info">
+							<li><i class="bi bi-globe"></i>Federation of Railway Officer's Association Office,Rail Bhavan,New Delhi -110001.</li>
+							  <li><i class="bi bi-envelope"></i>drm@r.railnet.gov.in</li>
+							  <li><i class="bi bi-telephone"></i>9717630982</li>
+						  </ul>
+						  <ul class="social-icon-four">
+							  <li class="follow">Follow us on: </li>
+							  <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+							  <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+							  <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+							  <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+							  <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+						  </ul>
+					  </div>
+				  </div>
+				  
+			  </div>
+		  </div>
+	  </div>
+  </section>

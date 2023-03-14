@@ -1,19 +1,15 @@
-<section id="hero">
-    <!-- <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);"> -->
-    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100"
-     style="background: url({{single[0].image}});
-     background-position: center;
-      background-size: cover;">
+
+  <section id="hero" style="background: url('{{single[0].image}}');     background-position: center;
+  background-size: cover;">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100" style="padding-bottom: 320px;">
       <h1 id="h1">{{single[0].title}}</h1>
       <form>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label" style="color: black;">{{single[0].label}}</label>
+          <label for="exampleInputEmail1" class="form-label" style="color: black; font-size: 20px;">{{single[0].label}}</label>
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background-color: beige; opacity: 0.5;">
         </div>
+        <button type="button" class="btn btn-dark" id="pj">{{single[0].button}}</button>
         </form>
-      <button type="button" class="btn btn-dark" id="pj">{{single[0].button}}</button>
-      </div>
-    <!-- </div> -->
-  </section>
- 
-      
+    </div>
+  </section><!-- End Hero Section -->
+  

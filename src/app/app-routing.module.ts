@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BookticketComponent } from './pages/bookticket/bookticket.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
 import { HomeComponent } from './pages/home/home.component';
 import { JourneyComponent } from './pages/journey/journey.component';
 import { PremiumtrainsComponent } from './pages/premiumtrains/premiumtrains.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { SingleComponent } from './pages/single/single.component';
 import { TouristtrainsComponent } from './pages/touristtrains/touristtrains.component';
+import { TrainlistComponent } from './pages/trainlist/trainlist.component';
 
 const routes: Routes = [
   {
@@ -34,6 +36,12 @@ const routes: Routes = [
   },
   {
     path:'touristtrains',component:TouristtrainsComponent
+  },
+  {
+    path:'trainlist',component:TrainlistComponent
+  },
+  {
+    path:'gallery',component:GalleryComponent
   },
 
 ];

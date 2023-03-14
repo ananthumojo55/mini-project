@@ -1,0 +1,18 @@
+<ul class="list-group" *ngFor="let item of trainlist" style="padding: 20px;">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto" style="padding: 20px;">
+        
+        <div class="fw-bold" style="font-family: 'Play', sans-serif; color: rgb(255, 247, 237); font-size: 30px;">{{item.train}}</div>
+        {{item.time1}}
+        <div style="margin-left:70px;">
+          <button type="button" class="btn btn-outline-success" >AC 3 Tier(3A)<br>{{item.a3}}</button>
+          <button type="button" class="btn btn-outline-danger" style="margin-left: 10px;">AC 2 Tier(2A)<br>{{item.b1}}</button>
+          <button type="button" class="btn btn-outline-warning" style="margin-left: 10px;">First AC(1A)<br>{{item.a1}}</button>
+          <button type="button" class="btn btn-outline-primary" style="margin-left: 10px;">Sleeper(SL)<br>{{item.sl}}</button>
+          <button type="button" class="btn btn-outline-info" style="margin-left: 10px;">Second Sitting(2S)<br>{{item.ss}}</button>
+          <button type="button" class="btn btn-outline-light" style="margin-left: 10px;">AC Chair Car(CC)<br>{{item.cc}}</button>
+        </div>
+      </div>
+      <span class="badge bg-primary rounded-pill">{{item.runs}}</span>
+    </li>
+    

@@ -123,8 +123,8 @@
     color: #00edde;
     font-weight: 700;
     font-size: 28px;
-    font-family: 'Comfortaa', cursive;
-  }
+    /* font-family: 'Righteous', cursive; */
+    }
   
   #about .about-text {
     line-height: 26px;

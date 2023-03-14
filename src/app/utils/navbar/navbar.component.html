@@ -10,12 +10,23 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#" id="nav">Home</a>
+            <a class="nav-link" aria-current="page" routerLink="" id="nav">Home</a>
           </li>
           
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" aria-current="page" routerLink="bookticket" id="nav">Book Ticket</a>
-          </li>
+          </li> -->
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="nav" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" id="nav">
+            <li><a class="dropdown-item" routerLink="bookticket">Book Ticket</a></li>
+            <li><a class="dropdown-item" routerLink="premiumtrains">Premium Trains</a></li>
+            <li><a class="dropdown-item" routerLink="touristtrains">Special Tourist Trains</a></li>
+            <li><a class="dropdown-item" routerLink="journey">Plan a Journey</a></li>
+          </ul>
+        </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="signup" id="nav">Signup</a>
           </li>

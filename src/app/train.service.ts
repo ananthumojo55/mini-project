@@ -1,17 +1,26 @@
 import { Injectable } from '@angular/core';
-import { database } from 'src/assets/data/data1';
-import { trains } from 'src/assets/data/data2';
+import { database,gallery,gallery1,stations,trainlist,trains } from 'src/assets/data/data1';
 @Injectable({
   providedIn: 'root'
 })
 export class TrainService {
 
-  constructor() { }
   getData(){
     return database
   }
-  constructor1() { }
   getData1(){
     return trains
+  }
+  getData2(){
+    return stations
+  }
+  getData3(){
+    return trainlist
+  }
+  getData4(){
+    return gallery
+  }
+  getData5(){
+    return gallery1
   }
 }

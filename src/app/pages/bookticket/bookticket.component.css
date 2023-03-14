@@ -3,6 +3,15 @@
     height: 100vh;
 }
 
+option .code{
+    background-color: #7861ff;
+    color: #ff0000c9;
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    height: 24px;
+}
+
 .section .section-center {
     position: absolute;
     top: 50%;
@@ -83,7 +92,7 @@
     height: 32px;
     text-align: center;
     pointer-events: none;
-    color: rgba(62, 72, 92, 0.3);
+    color: rgba(14, 50, 122, 0.3);
     font-size: 14px;
 }
 

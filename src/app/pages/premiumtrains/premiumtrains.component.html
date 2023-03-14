@@ -1,7 +1,16 @@
-<div class="card mb-3" *ngFor="let item of trains" >
+<h1 style="text-align: center;
+margin-top: 15px;
+font-family: 'Michroma', sans-serif;
+color: purple;">Premium Trains</h1>
+<span class="placeholder col-12 bg-info"></span>
+<div class="container text-center">
+    <div class="row" *ngFor="let item of trains">
+      <div class="col-6 py-2">
     <img src="{{item.image}}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h2 class="card-title">{{item.title}}</h2>
+      </div>
+      <div class="col-6 d-flex flex-column justify-content-center">
+      <h2 class="card-title" style="font-family: 'Playfair Display', serif; text-decoration: underline; color: aqua;">{{item.title}}</h2>
       <p class="card-text">{{item.description}}</p>
+      </div>
     </div>
   </div>

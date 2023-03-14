@@ -14,6 +14,9 @@ import { BookticketComponent } from './pages/bookticket/bookticket.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { PremiumtrainsComponent } from './pages/premiumtrains/premiumtrains.component';
 import { TouristtrainsComponent } from './pages/touristtrains/touristtrains.component';
+import { TrainlistComponent } from './pages/trainlist/trainlist.component';
+
+import { GalleryComponent } from './pages/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { TouristtrainsComponent } from './pages/touristtrains/touristtrains.comp
     BookticketComponent,
     ContactusComponent,
     PremiumtrainsComponent,
-    TouristtrainsComponent
+    TouristtrainsComponent,
+    TrainlistComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

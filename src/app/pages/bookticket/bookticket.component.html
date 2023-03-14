@@ -11,30 +11,36 @@
                 </div>
                 <div class="col-md-4 col-md-pull-7">
                     <div class="booking-form">
+
+                        
                         <form>
-                            <div class="form-group">
-                                <span class="form-label">From</span>
-                                <input class="form-control" type="text" placeholder="Enter Station Name or Station Code">
-                            </div>
-                            <div class="form-group">
-                                <span class="form-label">To</span>
-                                <input class="form-control" type="text" placeholder="Enter Station Name or Station Code">
-                            </div>
+                            
+                                <select class="form-select my-4">
+                                    <option selected ><span>FROM STATION</span></option>
+                                    <option  *ngFor="let s of station"><div class="code"><span class="code1">{{s.code}}</span></div> &nbsp;  {{s.name}}</option>
+                                </select>
+                            
+                                <select class="form-select my-4">
+                                    <option selected ><span>TO STATION</span></option>
+                                    <option  *ngFor="let s of station"><div class="code"><span class="code1">{{s.code}}</span></div> &nbsp;  {{s.name}}</option>
+                                </select>
+                           
                             <div class="input-group mb-3" style="width: 40px;">
                                 <select class="custom-select" id="inputGroupSelect02">
-                                  <option selected>Select Class</option>
-                                  <option value="1">First AC</option>
-                                  <option value="2">AC Two Tier</option>
-                                  <option value="3">AC Three Tier</option>
-                                  <option value="4">AC Three Tier Economy</option>
-                                  <option value="5">Sleeper</option>
-                                  <option value="6">Second Sitting</option>
-                                  <option value="7">Divyangjan</option>
+                                    <option selected>Select Class</option>
+                                    <option value="1">First AC</option>
+                                    <option value="2">AC Two Tier</option>
+                                    <option value="3">AC Three Tier</option>
+                                    <option value="4">AC Three Tier Economy</option>
+                                    <option value="5">Sleeper</option>
+                                    <option value="6">Second Sitting</option>
+                                    <option value="7">Divyangjan</option>
+                                    <option value="8">Vistadome AC</option>
                                 </select>
                               </div>
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <div class="form-group">
+                                    <div class="form-group ">
                                         <span class="form-label">Date of Journey</span>
                                         <input class="form-control" type="date" required>
                                     </div>
@@ -42,7 +48,7 @@
                                 
                             </div>
                             <div class="form-btn">
-                                <button class="btn btn-outline-danger">Find Trains</button>
+                                <button class="btn btn-outline-danger" routerLink="/trainlist">Find Trains</button>
                             </div>
                            
                         </form>
