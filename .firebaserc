@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "railway-75235": {
+      "hosting": {
+        "railway": [
+          "railway-75235"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "railway-75235"
+  }
+}
