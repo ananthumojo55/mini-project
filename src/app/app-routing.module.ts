@@ -5,6 +5,7 @@ import { ContactusComponent } from './pages/contactus/contactus.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { HomeComponent } from './pages/home/home.component';
 import { JourneyComponent } from './pages/journey/journey.component';
+import { LoginComponent } from './pages/login/login.component';
 import { PremiumtrainsComponent } from './pages/premiumtrains/premiumtrains.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { SingleComponent } from './pages/single/single.component';
@@ -42,6 +43,9 @@ const routes: Routes = [
   },
   {
     path:'gallery',component:GalleryComponent
+  },
+  {
+    path:'login',component:LoginComponent
   },
 
 ];

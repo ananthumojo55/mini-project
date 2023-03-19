@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { FireService } from 'src/app/fire.service';
 import { TrainService } from 'src/app/train.service';
 
 @Component({
@@ -8,11 +9,14 @@ import { TrainService } from 'src/app/train.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  constructor(private train : TrainService, private router: Router){}
+  email:string=""
+  psw:string=""
+  constructor(private train : TrainService, private router: Router, private fs:FireService){ }
   database=this.train.getData();
   gotoHere(id:string){
     localStorage.setItem('id',id)
     this.router.navigate(['/single'])
   }
+  
 }
 

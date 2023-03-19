@@ -15,13 +15,14 @@ import { ContactusComponent } from './pages/contactus/contactus.component';
 import { PremiumtrainsComponent } from './pages/premiumtrains/premiumtrains.component';
 import { TouristtrainsComponent } from './pages/touristtrains/touristtrains.component';
 import { TrainlistComponent } from './pages/trainlist/trainlist.component';
-
+import { FormsModule } from '@angular/forms';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -37,11 +38,13 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     PremiumtrainsComponent,
     TouristtrainsComponent,
     TrainlistComponent,
-    GalleryComponent
+    GalleryComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
